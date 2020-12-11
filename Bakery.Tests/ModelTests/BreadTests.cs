@@ -11,16 +11,16 @@ namespace Bakery.Tests
     [TestMethod] // test one
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread newBread = new Bread(5, 1);
+      Bread newBread = new Bread(5, "1");
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
     [TestMethod] // test two
-    public void GetBreadAmount_ReturnsBreadAmount_Int()
+    public void GetBreadAmount_ReturnsBreadAmount_String()
     {
-      int breadAmount = 1;
+      string breadAmount = "1";
       Bread newBread = new Bread(5, breadAmount);
-      int result = newBread.BreadAmount;
+      string result = newBread.BreadAmount;
       Assert.AreEqual(breadAmount, result);
     }
   }
