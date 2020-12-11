@@ -9,16 +9,18 @@ namespace Bakery
     static void Main()
     {
       Console.WriteLine("Wecome to Pierre's Bakery!");
-      Console.WriteLine("Would you like to order some delicious bread and pastries? If Yes [press 'Y'] otherwise [press Enter]");
+      Console.WriteLine("Would you like to order some delicious bread and pastries? If Yes [press 'Y']. Otherwise [press Enter]");
       string response = Console.ReadLine();
       if (response == "Y" || response == "y")
       {
       Console.WriteLine("How many loaves of bread would you like?");
       Bread newBread = new Bread(5, Console.ReadLine());
       }
+      else
+      {
+        Main();
+      }
 
     }
-
   }
-
 }
