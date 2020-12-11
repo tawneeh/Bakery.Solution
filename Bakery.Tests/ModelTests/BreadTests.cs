@@ -8,7 +8,7 @@ namespace Bakery.Tests
   [TestClass]
   public class BreadTests
   {
-    [TestMethod] // test one
+    [TestMethod] // test one pass
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
       Bread newBread = new Bread(5);
