@@ -16,12 +16,12 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void GetBreadAmount_ReturnsBreadAmount_String()
+    public void GetPastryAmount_ReturnsPastryAmount_String()
     {
-      string breadAmount = "1";
-      Bread newBread = new Bread(5, breadAmount);
-      string result = newBread.BreadAmount;
-      Assert.AreEqual(breadAmount, result);
+      string pastryAmount = "1";
+      Pastry newPastry = new Pastry(2, pastryAmount);
+      string result = newPastry.PastryAmount;
+      Assert.AreNotEqual(pastryAmount, result);
     }
   }
 }
