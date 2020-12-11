@@ -30,7 +30,7 @@ namespace Bakery.Tests
       string breadAmount = "1";
       int breadLoaves = Convert.ToInt32(breadAmount);
       int totalBreadPrice = breadLoaves * 5;
-      int result = Bread.GetBreadTotalPrice();
+      int result = GetBreadTotalPrice();
     }
   }
 }
