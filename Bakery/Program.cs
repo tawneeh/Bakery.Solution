@@ -1,5 +1,5 @@
 using System;
-// using System.Collections.Generic;
+using System.Collections.Generic;
 using Bakery.Models;
 
 namespace Bakery
@@ -14,10 +14,11 @@ namespace Bakery
       if (response == "Y" || response == "y")
       {
       Console.WriteLine("How many loaves of bread would you like?");
-      Bread newBread = new Bread(5, Console.ReadLine());
+      // Bread newBread = new Bread(5, Console.ReadLine());
 
-      int breadTotal = Bread.GetBreadTotalPrice(Console.ReadLine());
-      Console.WriteLine("This is your order total: " breadTotal);
+      string loaves = Console.ReadLine();
+      int loavesInt = Convert.ToInt32(loaves);
+      Console.WriteLine("Your total is $" + GetBreadTotalPrice(loaves));
       }
       else
       {
