@@ -21,7 +21,7 @@ namespace Bakery.Tests
       string pastryAmount = "1";
       Pastry newPastry = new Pastry(2, pastryAmount);
       string result = newPastry.PastryAmount;
-      Assert.AreNotEqual(pastryAmount, result);
+      Assert.AreEqual(pastryAmount, result);
     }
   }
 }
