@@ -9,7 +9,7 @@ namespace Bakery.Models
         public string PastryAmount { get; set; }
         private static List<Pastry> _instances = new List<Pastry> {};
 
-        public Pastry(int price, string pastryAmount)
+        public Pastry(int price, string pastryAmount) // pass
         {
             _price = 2;
             PastryAmount = pastryAmount;
