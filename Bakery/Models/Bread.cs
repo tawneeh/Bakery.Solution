@@ -11,7 +11,7 @@ namespace Bakery.Models
         public Bread(int price, int breadAmount)
         {
             _price = 5;
-            BreadAmount = BreadAmount; // test two good fail
+            BreadAmount = breadAmount; // test two pass
             _instances.Add(this);
         }
     }
