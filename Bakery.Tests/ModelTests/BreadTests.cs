@@ -23,5 +23,14 @@ namespace Bakery.Tests
       string result = newBread.BreadAmount;
       Assert.AreEqual(breadAmount, result);
     }
+
+    [TestMethod] // test three
+    public void GetBreadTotalPrice_ReturnsBreadTotalPrice_Int()
+    {
+      string breadAmount = "1";
+      int breadLoaves = Convert.ToInt32(breadAmount);
+      int totalBreadPrice = breadLoaves * 5;
+      int result = Bread.GetBreadTotalPrice();
+    }
   }
 }
