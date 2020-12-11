@@ -16,10 +16,10 @@ namespace Bakery.Models
             // _instances.Add(this);
         }
 
-        public static GetBreadTotalPrice()
+        public int GetBreadTotalPrice()
         {
-            BreadAmount = breadAmount;
-            int breadLoaves = Convert.ToInt32(breadAmount);
+            BreadAmount = BreadAmount;
+            int breadLoaves = Convert.ToInt32(BreadAmount);
             return _price * breadLoaves;
         }
     }
