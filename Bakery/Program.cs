@@ -14,11 +14,10 @@ namespace Bakery
       if (response == "Y" || response == "y")
       {
       Console.WriteLine("How many loaves of bread would you like?");
-      // Bread newBread = new Bread(); // what to put here??
-
+      Bread newBread = new Bread(5, Console.ReadLine());
       string loaves = Console.ReadLine();
       int loavesInt = Convert.ToInt32(loaves);
-      Console.WriteLine("Your total is $" + loavesInt * 5);
+      Console.WriteLine("Your total is $" + GetTotalBreadPrice(loavesInt));
       }
       else
       {
