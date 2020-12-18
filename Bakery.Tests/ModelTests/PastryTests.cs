@@ -21,5 +21,15 @@ namespace Bakery.Tests
       int result = newPastry.GetPastryPrice();
       Assert.AreEqual(2, result);
     }
+
+    [TestMethod]
+    public void GetDealPrce_ReturnsDealPrice_Int()
+    {
+    Pastry newPastry = new Pastry(3);
+    int multipleOfThree = 3 / 3;
+    int result = multipleOfThree * 5;
+    Assert.AreEqual(5, result);
+    }
+
   }
 }
