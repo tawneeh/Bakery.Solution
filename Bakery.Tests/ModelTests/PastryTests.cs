@@ -27,7 +27,7 @@ namespace Bakery.Tests
     {
     Pastry newPastry = new Pastry(3);
     int multipleOfThree = 3 / 3;
-    int result = multipleOfThree * 5;
+    int result = multipleOfThree * 4;
     Assert.AreEqual(5, result);
     }
 
