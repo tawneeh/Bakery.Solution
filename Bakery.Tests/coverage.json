@@ -1,0 +1,115 @@
+{
+  "Bakery.dll": {
+    "C:\\Users\\Tawnee\\Desktop\\Bakery.Solution\\Bakery\\Program.cs": {
+      "Bakery.Program": {
+        "System.Void Bakery.Program::Main()": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "21": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "27": 0
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 40,
+              "EndOffset": 42,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 40,
+              "EndOffset": 55,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 58,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 58,
+              "EndOffset": 112,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Tawnee\\Desktop\\Bakery.Solution\\Bakery\\Models\\Bread.cs": {
+      "Bakery.Models.Bread": {
+        "System.String Bakery.Models.Bread::get_BreadAmount()": {
+          "Lines": {
+            "7": 3
+          },
+          "Branches": []
+        },
+        "System.Void Bakery.Models.Bread::.ctor(System.Int32,System.String)": {
+          "Lines": {
+            "10": 2,
+            "11": 2,
+            "12": 2,
+            "13": 2,
+            "14": 2,
+            "15": 2
+          },
+          "Branches": []
+        },
+        "System.Void Bakery.Models.Bread::.cctor()": {
+          "Lines": {
+            "8": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Tawnee\\Desktop\\Bakery.Solution\\Bakery\\Models\\Pastry.cs": {
+      "Bakery.Models.Pastry": {
+        "System.String Bakery.Models.Pastry::get_PastryAmount()": {
+          "Lines": {
+            "7": 3
+          },
+          "Branches": []
+        },
+        "System.Void Bakery.Models.Pastry::.ctor(System.Int32,System.String)": {
+          "Lines": {
+            "10": 2,
+            "11": 2,
+            "12": 2,
+            "13": 2,
+            "14": 2,
+            "15": 2
+          },
+          "Branches": []
+        },
+        "System.Void Bakery.Models.Pastry::.cctor()": {
+          "Lines": {
+            "8": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
