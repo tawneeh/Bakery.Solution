@@ -16,11 +16,18 @@ public class Pastry
 
     public int GetPastryPrice()
     {
+      Pastry newPastry = new Pastry(PastryAmount);
+      if (PastryAmount % 3 == 0)
+      {
+        int multipleOfThree = PastryAmount / 3;
+        return multipleOfThree * 5;
+      }
+      else
+      {
       int totalPastryPrice = PastryAmount * Pastry.Price;
       return totalPastryPrice;
+      }
     }
 
   }
 }
-
-// Pastry deal: if (pastryAmount % 3 == 0) then price = pastryAmount * 5
