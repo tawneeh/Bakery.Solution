@@ -7,7 +7,7 @@ namespace Bakery
   {
     static void Main()
     {
-      Console.WriteLine("Wecome to Pierre's Bakery! Bread is $5 and Pastries are $2. We also offer special deals!");
+      Console.WriteLine("Bonjour! Wecome to Pierre's Bakery. Bread is $5 and Pastries are $2. We also offer special deals!");
       Console.WriteLine("Would you like to order some delicious bread and pastries? If Yes [press 'Y']. Otherwise [press 'Enter']");
       string response = Console.ReadLine();
       if (response == "Y" || response == "y")
@@ -16,8 +16,16 @@ namespace Bakery
       string loaves = Console.ReadLine();
       int loavesInt = int.Parse(loaves);
       Bread newBread = new Bread(loavesInt);
-      newBread.GetBreadPrice();
-      Console.WriteLine("The Price is: $" + newBread.GetBreadPrice());
+      int breadPrice = newBread.GetBreadPrice();
+      Console.WriteLine("The Price for your bread is: $" + breadPrice + ".");
+      Console.WriteLine("How many pastries would you like?");
+      string pastries = Console.ReadLine();
+      int pastryInt = int.Parse(pastries);
+      Pastry newPastry = new Pastry(pastryInt);
+      int pastryPrice = newPastry.GetPastryPrice();
+      Console.WriteLine("The Price for your pastries is $" + pastryPrice + ".");
+      Console.WriteLine("Your grand total today is $" + (breadPrice + pastryPrice) + ". Bon appetit!");
+      Console.WriteLine("Au revior!");
       }
       else
       {
