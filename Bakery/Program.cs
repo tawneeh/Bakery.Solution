@@ -17,6 +17,10 @@ namespace Bakery
       int loavesInt = int.Parse(loaves);
       Bread newBread = new Bread(loavesInt);
       int breadPrice = newBread.GetBreadPrice();
+      if (loavesInt == 2) 
+      {
+        Console.WriteLine("You'll be getting a free loaf today with our buy 2 get 1 free deal!");
+      }
       Console.WriteLine("The Price for your bread is: $" + breadPrice + ".");
       Console.WriteLine("How many pastries would you like?");
       string pastries = Console.ReadLine();
