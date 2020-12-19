@@ -24,7 +24,7 @@ Open by Downloading or Cloning
 
 ## Known Bugs
 
-This application is not yet functional. 
+This application has no known bugs. 
 
 ## Support and contact details
 
