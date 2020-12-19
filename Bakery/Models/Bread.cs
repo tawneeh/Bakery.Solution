@@ -13,11 +13,19 @@ namespace Bakery.Models
 
     public int GetBreadPrice()
     {
+      Bread newBread = new Bread(BreadAmount);
+      if (BreadAmount == 2) 
+      {
+        int dealAmount = BreadAmount + 1;
+        int dealPrice = dealAmount * Bread.Price - Bread.Price;
+        return dealPrice;
+      }
+      else
+      {
       int totalBreadPrice = BreadAmount * Bread.Price; // getter and setter gets the BreadAmount from UI
       return totalBreadPrice;
+      }
     }
 
   }
 }
-
-// Bread deal - if (breadAmount % 3 == 0) { then 1 loaf is free. *for each 3* -- signify with a for loop, how?
