@@ -22,7 +22,7 @@ namespace Bakery.Models
       }
       else
       {
-      int totalBreadPrice = BreadAmount * Bread.Price; // getter and setter gets the BreadAmount from UI
+      int totalBreadPrice = BreadAmount * Bread.Price;
       return totalBreadPrice;
       }
     }
