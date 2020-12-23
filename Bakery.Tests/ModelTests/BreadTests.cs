@@ -27,10 +27,11 @@ namespace Bakery.Tests
     [TestMethod]
     public void GetBreadPrice_ReturnsDealPrice_Int()
     {
-      Bread newBread = new Bread(2);
-      int dealAmount = newBread.BreadAmount + 1;
-      int result = dealAmount * Bread.Price - Bread.Price;
-      Assert.AreEqual(10, result);
+      Bread newBread = new Bread(6);
+      int multipleOfThree = 6 / 3;
+      int dealAmount = 6 - multipleOfThree;
+      int result = dealAmount * 5;
+      Assert.AreEqual(20, result);
     }
 
   }

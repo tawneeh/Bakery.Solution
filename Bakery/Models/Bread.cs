@@ -14,11 +14,11 @@ namespace Bakery.Models
     public int GetBreadPrice()
     {
       Bread newBread = new Bread(BreadAmount);
-      if (BreadAmount == 2) 
+      if (BreadAmount % 3 == 0) 
       {
-        int dealAmount = BreadAmount + 1;
-        int dealPrice = dealAmount * Bread.Price - Bread.Price;
-        return dealPrice;
+        int multipleOfThree = BreadAmount / 3;
+        int dealAmount = BreadAmount - multipleOfThree;
+        return dealAmount * 5;
       }
       else
       {
