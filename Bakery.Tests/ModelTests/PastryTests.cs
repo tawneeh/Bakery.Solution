@@ -23,7 +23,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void GetPasrtyPrice_ReturnsDealPrice_Int()
+    public void GetPastryPrice_ReturnsDealPrice_Int()
     {
       Pastry newPastry = new Pastry(4);
       int multipleOfThree = 4 / 3;
