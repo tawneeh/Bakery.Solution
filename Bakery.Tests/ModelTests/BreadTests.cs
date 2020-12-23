@@ -25,12 +25,12 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void GetDealPrce_ReturnsDealPrice_Int()
+    public void GetBreadPrice_ReturnsDealPrice_Int()
     {
       Bread newBread = new Bread(2);
       int dealAmount = newBread.BreadAmount + 1;
       int result = dealAmount * Bread.Price - Bread.Price;
-      Assert.AreEqual(15, result);
+      Assert.AreEqual(10, result);
     }
 
   }
