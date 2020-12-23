@@ -25,10 +25,10 @@ namespace Bakery.Tests
     [TestMethod]
     public void GetPasrtyPrice_ReturnsDealPrice_Int()
     {
-      Pastry newPastry = new Pastry(3);
-      int multipleOfThree = 3 / 3;
-      int result = multipleOfThree * 5;
-      Assert.AreEqual(5, result);
+      Pastry newPastry = new Pastry(4);
+      int multipleOfThree = 4 / 3;
+      int result = 4 * 2 - multipleOfThree;
+      Assert.AreEqual(7, result);
     }
 
   }
