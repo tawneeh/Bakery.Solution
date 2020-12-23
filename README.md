@@ -20,7 +20,12 @@ Open by Downloading or Cloning
 * Download this repository to your computer by clicking the green Code button and 'Download Zip'
 * Or clone the repository
 * Once this project is on your computer, open the root directory in your code editor and type `cd Bakery` into the terminal
-* Type `dotnet run` into the terminal to view the console user interface
+
+Setup Instructions
+* Navigate to the Bakery project directory and type `dotnet restore` into the terminal
+* Then, type `dotnet build` into the terminal followed by `dotnet run`
+* Peruse this application at your leisure 
+* To run the tests, navigate to the Bakery.Tests directory and type in `dotnet test`
 
 ## Known Bugs
 
